@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('assets/Hayden.jpg');
+            background-image: url('assets/Hayden.JPG');
             background-size: cover;
             background-position: center;
             font-family: Arial, sans-serif;
@@ -32,13 +32,23 @@
             height: auto;
             display: block;
             margin: 20px auto;
+            animation: spin 3s linear infinite; /* Spin animation */
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Hayden Carroll Hate Page</h1>
+        <h1>Welcome to Your Website</h1>
     </header>
     <img src='assets/Hayden.JPG' alt='Your Image'>
 </body>
